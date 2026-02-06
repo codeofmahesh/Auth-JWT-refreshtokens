@@ -15,7 +15,7 @@ export async function userLogin(req, res) {
     try{
         //find user by username or email
         const [rows] = await poolPromise.query('SELECT id, username, email, password_hash, role FROM users WHERE username = ? OR email = ?', [username || null, email || null]);
-
+            
         if(rows.length === 0) {
             return res.status(401).json({message: "Invalid credentials"});
         }

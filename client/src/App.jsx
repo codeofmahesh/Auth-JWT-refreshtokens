@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 import Dashboard from './components/dashboard/Dashboard.jsx';
 import Login from './components/login/Login.jsx';
 import Register from './components/register/Register.jsx';
@@ -34,6 +34,8 @@ function App() {
         )
       } />
       <Route path='/register' element={ <Register />}/>
+      {/* Redirect unknown routes to home */}
+      <Route path='*' element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
