@@ -8,4 +8,4 @@ Frontend:(vite)react, axios, react-router-dom
 Api: express, bcrypt, dotenv, mysql2, cookie-parser, cors, jsonwebtoken, nodemon
 
 ## Screenshots
-<video controls src="assets/Untitled design.mp4" title="Title"></video>
+![Animation showing a feature](./assets/Untitled%20design.mp4)
